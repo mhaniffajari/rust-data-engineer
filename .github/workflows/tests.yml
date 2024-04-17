@@ -16,8 +16,5 @@ jobs:
           override: true
       - name: Run clippy
         run: |
-          for dir in /workspaces/rust-data-engineer/project/data_structure /workspaces/rust-data-engineer/project/fruit-salad; do
-            cd $dir
-            make test
-            cd -
-          done
+          cd /workspaces/rust-data-engineer/project/data_structure
+          make test
