@@ -13,7 +13,7 @@ lint:
 	cd /workspaces/rust-data-engineer/project/data_structure && cargo clippy --quiet
 
 test:
-	ls
+	cd project/data_structure && cargo test	
 
 run:
 	cd /workspaces/rust-data-engineer/project/data_structure && cargo run
