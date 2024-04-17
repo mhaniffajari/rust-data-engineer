@@ -15,5 +15,9 @@ jobs:
           components: clippy, rustfmt
           override: true
       - name: Run clippy
-        run: make test
-  
+        run: |
+          for dir in /workspaces/rust-data-engineer/project/data_structure /workspaces/rust-data-engineer/project/fruit-salad; do
+            cd $dir
+            make test
+            cd -
+          done
