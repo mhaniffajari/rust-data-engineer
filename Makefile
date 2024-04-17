@@ -1,3 +1,5 @@
+PROJECT_DIRS := project/data_structure project/fruit-salad
+
 rust-version:
 	@echo "Rust command-line utility versions:"
 	rustc --version 			#rust compiler
@@ -7,18 +9,28 @@ rust-version:
 	clippy-driver --version		#rust linter
 
 format:
-	cd project/data_structure && cargo fmt --quiet
+	for dir in $(PROJECT_DIRS); do \
+		cd $$dir && cargo fmt --quiet; \
+	done
 
 lint:
-	cd project/data_structure && cargo clippy --quiet
+	for dir in $(PROJECT_DIRS); do \
+		cd $$dir && cargo clippy --quiet; \
+	done
 
 test:
-	cd project/data_structure && cargo test	
+	for dir in $(PROJECT_DIRS); do \
+		cd $$dir && cargo test; \
+	done
 
 run:
-	cd project/data_structure && cargo run
+	for dir in $(PROJECT_DIRS); do \
+		cd $$dir && cargo run; \
+	done
 
 release:
-	cd project/data_structure && cargo build --release
+	for dir in $(PROJECT_DIRS); do \
+		cd $$dir && cargo build --release; \
+	done
 
 all: format lint test run
