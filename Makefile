@@ -1,4 +1,4 @@
-PROJECT_DIRS := project/data_structure fruit-salad
+PROJECT_DIRS := project/data_structure fruit-salad vecdeque-fruit-salad
 
 rust-version:
 	@echo "Rust command-line utility versions:"
