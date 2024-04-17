@@ -16,4 +16,4 @@ jobs:
           override: true
       - name: Run clippy
         run: |
-        pwd
+          make test
