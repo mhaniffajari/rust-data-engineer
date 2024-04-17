@@ -16,5 +16,4 @@ jobs:
           override: true
       - name: Run clippy
         run: |
-          cd /workspaces/rust-data-engineer/project/data_structure
-          make test
+        pwd
