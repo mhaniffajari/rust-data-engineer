@@ -7,18 +7,18 @@ rust-version:
 	clippy-driver --version		#rust linter
 
 format:
-	cd /workspaces/rust-data-engineer/project/data_structure && cargo fmt --quiet
+	cd project/data_structure && cargo fmt --quiet
 
 lint:
-	cd /workspaces/rust-data-engineer/project/data_structure && cargo clippy --quiet
+	cd project/data_structure && cargo clippy --quiet
 
 test:
 	cd project/data_structure && cargo test	
 
 run:
-	cd /workspaces/rust-data-engineer/project/data_structure && cargo run
+	cd project/data_structure && cargo run
 
 release:
-	cd /workspaces/rust-data-engineer/project/data_structure && cargo build --release
+	cd project/data_structure && cargo build --release
 
 all: format lint test run
