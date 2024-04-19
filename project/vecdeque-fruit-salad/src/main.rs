@@ -9,8 +9,8 @@ fn main() {
     fruit.push_back("Mango");
 
     println!("Fruit Salad:");
-    for (i,item) in fruit.iter().enumerate() {
-        if i !=fruit.len() - 1 {
+    for (i, item) in fruit.iter().enumerate() {
+        if i != fruit.len() - 1 {
             print!("{}, ", item);
         } else {
             println!("{}", item);
