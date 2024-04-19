@@ -1,4 +1,4 @@
-PROJECT_DIRS := project/data_structure fruit-salad vecdeque-fruit-salad linkedinlist_fruit_salad
+PROJECT_DIRS := project/data_structure fruit-salad vecdeque-fruit-salad linkedinlist_fruit_salad hashmap_count
 
 rust-version:
 	@echo "Rust command-line utility versions:"
